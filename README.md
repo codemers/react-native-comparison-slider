@@ -91,8 +91,8 @@ SOFTWARE.
 
 This package use these two libraries:
 
-https://github.com/jhampton/react-native-cropping.git from 2jhampton
-https://github.com/jeanregisser/react-native-slider from @jeanregisser
+- https://github.com/jhampton/react-native-cropping.git from 2jhampton
+- https://github.com/jeanregisser/react-native-slider from @jeanregisser
 
 @copyright of the image used in the demo:
-http://www.basketetsacados.com/top-10-des-plus-belles-plages-du-monde
+- http://www.basketetsacados.com/top-10-des-plus-belles-plages-du-monde
