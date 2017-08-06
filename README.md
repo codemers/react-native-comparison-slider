@@ -54,8 +54,8 @@ Tableau avec les props + valeur initiale
 |**`initialPosition`**|The initial position of the slider hover the image. Value are from (0 to 100)|`50`|
 |**`imageWidth`**|Width of the image/comparison slider|If local image: `no default value`. If remote image `image width`|
 |**`imageHeight`**|Height of the image/comparison slider|If local image: `no default value`. If remote image `image height`|
-|**`leftImage`**|Left image for the comparison slider. Use as `require() image` |`No default value`|
-|**`rightImage`**|Right image for the comparison slider. Use as `require() image` |`No default value`
+|**`leftImage`**|Left image for the comparison slider. Use as `require()` |`No default value`|
+|**`rightImage`**|Right image for the comparison slider. Use as `require()` |`No default value`
 |**`leftImageURI`**|URL for the left image of the comparison slider. Use as `{ uri:  "http://..." }`|`No default value`|
 |**`rightImageURI`**|URL for the left image of the comparison slider. Use as `{ uri:  "http://..." }`|`No default value`|
 |**`onValueChange`**|Function that get called when the slider value changed. (value) => console.log(value)|`No default value`|
@@ -94,3 +94,5 @@ This package use these two libraries:
 https://github.com/jhampton/react-native-cropping.git from 2jhampton
 https://github.com/jeanregisser/react-native-slider from @jeanregisser
 
+@copyright of the image used in the demo:
+http://www.basketetsacados.com/top-10-des-plus-belles-plages-du-monde
