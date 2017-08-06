@@ -15,28 +15,53 @@ Require React-Native > 0.45.0
 ![Demo](https://dl.dropboxusercontent.com/content_link/7UBx3Eoc8BAxWqA1DhxMXrLDr2s8h06aIukC26FZBEYcuRxTdqDP6SWSNXy2jn8X/file?dl=0&duc_id=Fomo7JGidlWzMxdwLnzLWGErj1hEsovOT2PvyWb8S4ePsHQUyMwjv820PtaBqlCg&raw=1&size=2048x1536&size_mode=3)
 
 ## Example code
-See: react-native-comparison-slider-example
+PS: For a more detailed example, see: react-native-comparison-slider-example
 
-## Usage
+When you want to use the comparison slider with local images, simply add these lines: 
+```
+<ComparisonSlider 
+  imageWidth={667}
+  imageHeight={400}
+  initialPosition={50}
+  leftImage={require("./img/left.jpeg")}
+  rightImage={require("./img/right.jpeg")} 
+/> 
+```
+
+These code will use the left.jpeg image as the left image and the right.jpeg as the right image.
+The slider will be half between the image (50).
+The imageWidth and imageHeight are the size you want your comparison slider to be.
+
+When you want to use the comparison slider with remote images, simply add these lines:
+```
+<ComparisonSlider 
+  initialPosition={50}
+  leftImageURI="https://..."
+  rightImageURI="https://..."
+/> 
+```
+
+These code will use the leftImageURI as the left image and the rightImageURI as the right image.
+The slider will be half between the image (50).
+The default size for the comparison slider will be the image size of the remote url.You can bypass the size by adding the two props: `imageWidth and imageHeight`.
+
+## Props
 
 Tableau avec les props + valeur initiale
 
-
-// 	//	Value
-// 	initialPosition: React.PropTypes.number.optionnal,
-// 	imageWidth: React.PropTypes.number.optionnal,	
-// 	imageHeight: React.PropTypes.number.optionnal,	
-// 	thumbWidth: React.PropTypes.number.required,		//	Size of the middle bar
-// 	leftImage: React.PropTypes.object.optionnal,
-// 	rightImage: React.PropTypes.object.optionnal,
-// 	leftImageURI: React.PropTypes.string.optionnal,
-// 	rightImageURI: React.PropTypes.string.optionnal,
-//	onValueChange: Function
-//	thumbnailRender: Function: 
-//	thumbnailWidth: Number
-//	imageStyle
-
-// }
+| Prop | Description | Default value |
+|---|---|---|
+|**`initialPosition`**|The initial position of the slider hover the image. Value are from (0 to 100)|`50`|
+|**`imageWidth`**|Width of the image/comparison slider|If local image: `no default value`. If remote image `image width`|
+|**`imageHeight`**|Height of the image/comparison slider|If local image: `no default value`. If remote image `image height`|
+|**`leftImage`**|Left image for the comparison slider. Use as `require()` |`No default value`|
+|**`rightImage`**|Right image for the comparison slider. Use as `require()` |`No default value`
+|**`leftImageURI`**|URL for the left image of the comparison slider. Use as `{ uri:  "http://..." }`|`No default value`|
+|**`rightImageURI`**|URL for the left image of the comparison slider. Use as `{ uri:  "http://..." }`|`No default value`|
+|**`onValueChange`**|Function that get called when the slider value changed. (value) => console.log(value)|`No default value`|
+|**`thumbnailRender`**|Function that return a view. The view will be the middle slider|`Slider you can see in the demo`|
+|**`thumbnailWidth`**|Width of the view that is returned by the thumbnailRender|`No default value`|
+|**`imageStyle`**|Style property you can pass to apply to image of the comparison slider|`No default value`|
 
 ## License
 
@@ -61,3 +86,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Other
+
+This package use these two libraries:
+
+- https://github.com/jhampton/react-native-cropping.git from 2jhampton
+- https://github.com/jeanregisser/react-native-slider from @jeanregisser
+
+@copyright of the image used in the demo:
+- http://www.basketetsacados.com/top-10-des-plus-belles-plages-du-monde
