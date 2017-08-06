@@ -49,22 +49,22 @@ The default size for the comparison slider will be the image size of the remote 
 
 Tableau avec les props + valeur initiale
 
+| Prop | Description | Default value |
+|---|---|---|
+|**`initialPosition`**|The initial position of the slider hover the image. Value are from (0 to 100)|`50`|
+|**`imageWidth`**|Width of the image/comparison slider|If local image: `no default value`. If remote image `image width`|
+|**`imageHeight`**|Height of the image/comparison slider|If local image: `no default value`. If remote image `image height`|
 
-// 	//	Value
-// 	initialPosition: React.PropTypes.number.optionnal,
-// 	imageWidth: React.PropTypes.number.optionnal,	
-// 	imageHeight: React.PropTypes.number.optionnal,	
-// 	thumbWidth: React.PropTypes.number.required,		//	Size of the middle bar
-// 	leftImage: React.PropTypes.object.optionnal,
-// 	rightImage: React.PropTypes.object.optionnal,
-// 	leftImageURI: React.PropTypes.string.optionnal,
-// 	rightImageURI: React.PropTypes.string.optionnal,
-//	onValueChange: Function
-//	thumbnailRender: Function: 
-//	thumbnailWidth: Number
-//	imageStyle
+|**`leftImage`**|Left image for the comparison slider. Use as `require() image` |`No default value`|
+|**`rightImage`**|Right image for the comparison slider. Use as `require() image` |`No default value`
 
-// }
+|**`leftImageURI`**|URL for the left image of the comparison slider. Use as `{ uri:  "http://..." }`|`No default value`|
+|**`rightImageURI`**|URL for the left image of the comparison slider. Use as `{ uri:  "http://..." }`|`No default value`|
+
+|**`onValueChange`**|Function that get called when the slider value changed. (value) => console.log(value)|`No default value`|
+|**`thumbnailRender`**|Function that return a view. The view will be the middle slider|`Slider you can see in the demo`|
+|**`thumbnailWidth`**|Width of the view that is returned by the thumbnailRender|`No default value`|
+|**`imageStyle`**|Style property you can pass to apply to image of the comparison slider|`No default value`|
 
 ## License
 
@@ -89,3 +89,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Other
+
+This package use these two libraries:
+
+https://github.com/jhampton/react-native-cropping.git from 2jhampton
+https://github.com/jeanregisser/react-native-slider from @jeanregisser
+
