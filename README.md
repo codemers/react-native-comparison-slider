@@ -12,6 +12,7 @@ Require React-Native > 0.45.0
 ```
 
 ## Demo
+![alt text](https://www.dropbox.com/s/mer2slaufny1zo2/demo_comparison_slider.gif?dl=0)
 
 ## Example code
 
