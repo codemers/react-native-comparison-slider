@@ -12,7 +12,7 @@ Require React-Native > 0.45.0
 ```
 
 ## Demo
-![Demo](http://i.imgur.com/OUkLi.gif)
+![Demo](https://dl.dropboxusercontent.com/content_link/7UBx3Eoc8BAxWqA1DhxMXrLDr2s8h06aIukC26FZBEYcuRxTdqDP6SWSNXy2jn8X/file?dl=0&duc_id=Fomo7JGidlWzMxdwLnzLWGErj1hEsovOT2PvyWb8S4ePsHQUyMwjv820PtaBqlCg&raw=1&size=2048x1536&size_mode=3)
 
 ## Example code
 
