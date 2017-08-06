@@ -1,5 +1,6 @@
 ## React Native Comparison SLider
-- A simple component to display two image in comparison
+- A simple component to display two image in comparison with a slide-over feature.
+- Help you to compare two images
 - Lightweight, fast, flexible, customizable.
 - Support both iOS and Android devices
 
@@ -8,14 +9,12 @@
 npm install --save react-native-comparison-slider
 
 Require React-Native > 0.45.0
-
 ```
 
 ## Demo
 ![Demo](https://dl.dropboxusercontent.com/content_link/7UBx3Eoc8BAxWqA1DhxMXrLDr2s8h06aIukC26FZBEYcuRxTdqDP6SWSNXy2jn8X/file?dl=0&duc_id=Fomo7JGidlWzMxdwLnzLWGErj1hEsovOT2PvyWb8S4ePsHQUyMwjv820PtaBqlCg&raw=1&size=2048x1536&size_mode=3)
 
 ## Example code
-
 See: react-native-comparison-slider-example
 
 ## Usage
