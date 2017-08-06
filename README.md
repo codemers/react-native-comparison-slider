@@ -54,13 +54,10 @@ Tableau avec les props + valeur initiale
 |**`initialPosition`**|The initial position of the slider hover the image. Value are from (0 to 100)|`50`|
 |**`imageWidth`**|Width of the image/comparison slider|If local image: `no default value`. If remote image `image width`|
 |**`imageHeight`**|Height of the image/comparison slider|If local image: `no default value`. If remote image `image height`|
-
 |**`leftImage`**|Left image for the comparison slider. Use as `require() image` |`No default value`|
 |**`rightImage`**|Right image for the comparison slider. Use as `require() image` |`No default value`
-
 |**`leftImageURI`**|URL for the left image of the comparison slider. Use as `{ uri:  "http://..." }`|`No default value`|
 |**`rightImageURI`**|URL for the left image of the comparison slider. Use as `{ uri:  "http://..." }`|`No default value`|
-
 |**`onValueChange`**|Function that get called when the slider value changed. (value) => console.log(value)|`No default value`|
 |**`thumbnailRender`**|Function that return a view. The view will be the middle slider|`Slider you can see in the demo`|
 |**`thumbnailWidth`**|Width of the view that is returned by the thumbnailRender|`No default value`|
