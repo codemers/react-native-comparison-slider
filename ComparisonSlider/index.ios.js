@@ -28,7 +28,7 @@ export default class Index extends Component {
         return (
             <View style={styles.container}>
                 <ComparisonSlider 
-                  imageWidth={300}
+                  imageWidth={667}
                   imageHeight={400}
                   initialPosition={50}
                   leftImage={require("./img/left.jpeg")}
@@ -42,7 +42,6 @@ export default class Index extends Component {
                   //   )
                   // }}
                   onValueChange={(val) => console.log("New value")}/>  
-                <Text>{this.state.value}</Text>
             </View>
     );
   }
