@@ -46,9 +46,6 @@ The slider will be half between the image (50).
 The default size for the comparison slider will be the image size of the remote url.You can bypass the size by adding the two props: `imageWidth and imageHeight`.
 
 ## Props
-
-Tableau avec les props + valeur initiale
-
 | Prop | Description | Default value |
 |---|---|---|
 |**`initialPosition`**|The initial position of the slider hover the image. Value are from (0 to 100)|`50`|
