@@ -36,6 +36,8 @@ The imageWidth and imageHeight are the size you want your comparison slider to b
 
 When you want to use the comparison slider with remote images, simply add these lines:
 ```
+import ComparisonSlider from "react-native-comparison-slider";
+
 <ComparisonSlider 
   initialPosition={50}
   leftImageURI="https://..."
