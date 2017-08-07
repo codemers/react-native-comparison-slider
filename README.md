@@ -15,7 +15,7 @@ Require React-Native > 0.45.0
 ![Demo](https://dl.dropboxusercontent.com/content_link/7UBx3Eoc8BAxWqA1DhxMXrLDr2s8h06aIukC26FZBEYcuRxTdqDP6SWSNXy2jn8X/file?dl=0&duc_id=Fomo7JGidlWzMxdwLnzLWGErj1hEsovOT2PvyWb8S4ePsHQUyMwjv820PtaBqlCg&raw=1&size=2048x1536&size_mode=3)
 
 ## Example code
-PS: For a more detailed example, see: react-native-comparison-slider-example
+PS: For a more detailed example, see: react-native-comparison-slider-example -> to run the example, cd to the example folder and do `react-native start` lunch the iOS simulator by running `react-native run-ios`
 
 When you want to use the comparison slider with local images, simply add these lines: 
 ```
