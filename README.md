@@ -19,6 +19,8 @@ PS: For a more detailed example, see: react-native-comparison-slider-example -> 
 
 When you want to use the comparison slider with local images, simply add these lines: 
 ```
+import ComparisonSlider from "react-native-comparison-slider";
+
 <ComparisonSlider 
   imageWidth={667}
   imageHeight={400}
