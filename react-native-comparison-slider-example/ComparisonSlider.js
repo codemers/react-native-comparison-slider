@@ -22,13 +22,13 @@ const CroppedImage = function(props) {
 		}, props.style]}>
 		
 			<Image 
-				style={{
+				style={[{
 					position: "absolute",
 					top: props.cropTop * -1,
 					left: props.cropLeft * -1,
 					width: props.width,
 					height: props.height
-				}}
+				}, props.imageStyle]}
 				source={props.source}
 				resizeMode={props.resizeMode}>
 					{props.children}
@@ -167,14 +167,14 @@ export default class ComparisonSlider extends Component {
 
 		return (
 			<View>
-				<ImageBackground
+				<Image
 					source={ this.state.rightImage ? this.state.rightImage : { uri: this.state.rightImageURI } }
 					style={[ {
 						width: this.state.imgWidth,
 						height: this.state.imgHeight,
 						backgroundColor: "transparent",
 						justifyContent: "center",
-					}, this.props.imageStyle]}>
+					}, this.props.imageStyle, this.props.resizeMode && { resizeMode: this.props.resizeMode }]}>
 
 					<CroppedImage
 						source={ this.state.leftImage ? this.state.leftImage : { uri: this.state.leftImageURI } }
@@ -184,7 +184,8 @@ export default class ComparisonSlider extends Component {
 						cropWidth={this.state.cropWidth}
 						cropHeight={this.state.imgHeight}
 						width={this.state.imgWidth}
-						height={this.state.imgHeight} />
+						height={this.state.imgHeight}
+						imageStyle={!this.props.resizeMode ? undefined : { resizeMode: this.props.resizeMode }} />
 
 
 						{ this.props.thumnailRender && this.props.thumbnailWidth ? 
@@ -217,7 +218,7 @@ export default class ComparisonSlider extends Component {
 								width: this.state.imgWidth,
 							}} 
 						/>
-				</ImageBackground>
+				</Image>
 			</View>
 		);
 	}
