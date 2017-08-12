@@ -63,6 +63,7 @@ The default size for the comparison slider will be the image size of the remote 
 |**`thumbnailRender`**|Function that return a view. The view will be the middle slider|`Slider you can see in the demo`|
 |**`thumbnailWidth`**|Width of the view that is returned by the thumbnailRender|`No default value`|
 |**`imageStyle`**|Style property you can pass to apply to image of the comparison slider|`No default value`|
+|**`resizeMode`**|ResizeMode property to apply to the image of the comparison slider|`No default value`|
 
 ## License
 
