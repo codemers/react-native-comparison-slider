@@ -69,6 +69,10 @@ export default class ComparisonSlider extends Component {
 		}
 	}
 
+	componentWillReceiveProps(nextProps) {
+		this.setState({ rightImageURI: nextProps.rightImageURI})
+	}
+
 	onChange(value) {
 
 		const newValue = ((value * 100 * this.state.imgWidth) / 100);
