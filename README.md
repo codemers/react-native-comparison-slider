@@ -60,6 +60,8 @@ The default size for the comparison slider will be the image size of the remote 
 |**`leftImageURI`**|URL for the left image of the comparison slider. Use as `{ uri:  "http://..." }`|`No default value`|
 |**`rightImageURI`**|URL for the left image of the comparison slider. Use as `{ uri:  "http://..." }`|`No default value`|
 |**`onValueChange`**|Function that get called when the slider value changed. (value) => console.log(value)|`No default value`|
+|**`onSlidingStarted`**|Function that get called when the slider starts to change. () => console.log(value)||
+|**`onSlidingEnd`**|Function that get called when the slider ends changing. () => console.log(value)||
 |**`thumbnailRender`**|Function that return a view. The view will be the middle slider|`Slider you can see in the demo`|
 |**`thumbnailWidth`**|Width of the view that is returned by the thumbnailRender|`No default value`|
 |**`imageStyle`**|Style property you can pass to apply to image of the comparison slider|`No default value`|
