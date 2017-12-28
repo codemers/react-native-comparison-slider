@@ -13,10 +13,10 @@ import {
 } from "react-native";
 
 
-import ComparisonSlider from "./ComparisonSlider.js";
+import ComparisonSlider from "./ComparisonSlider";
 
 export default class Index extends Component {
-    
+
     constructor(props) {
         super(props);
 
@@ -29,15 +29,17 @@ export default class Index extends Component {
             <View style={styles.container}>
 
                 {/** Local images **/}
-                <ComparisonSlider 
+                <ComparisonSlider
                   imageWidth={667}
                   imageHeight={400}
                   initialPosition={50}
-                  leftImage={require("./img/left.jpeg")}
-                  rightImage={require("./img/right.jpeg")} />  
+                  resizeMode="cover"
+                  video={true}
+                  leftImage={require("./video/1.mp4")}
+                  rightImage={require("./video/2.mp4")} />
 
                 {/** Remote image **/}
-                {/** <ComparisonSlider 
+                {/** <ComparisonSlider
                   imageWidth={667}
                   imageHeight={400}
                   initialPosition={50}
