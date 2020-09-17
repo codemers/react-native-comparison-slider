@@ -161,7 +161,7 @@ export default class ComparisonSlider extends Component {
 
 	render() {
 
-		if(this.props.thumnailRender && !this.props.thumbnailWidth) {
+		if(this.props.thumbnailRender && !this.props.thumbnailWidth) {
 			console.log("When using thumbnail render, thumbnailWidth should be specified! ");
 		}
 
@@ -187,11 +187,12 @@ export default class ComparisonSlider extends Component {
 						height={this.state.imgHeight} />
 
 
-						{ this.props.thumnailRender && this.props.thumbnailWidth ? 
+						{ this.props.thumbnailRender && this.props.thumbnailWidth ? 
 							<View style={{ 
 								position: "absolute", 
 								left: (this.state.value * this.state.imgWidth) - this.props.thumbnailWidth / 2,
-							}}>{this.props.thumnailRender()}</View> : 
+							}}>{this.props.thumbnailRender
+							    ()}</View> : 
 
 							this.renderDefaultThumbView() }
 
