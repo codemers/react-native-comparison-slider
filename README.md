@@ -1,4 +1,4 @@
-## React Native Comparison SLider
+## React Native Comparison Slider
 - A simple component to display two image in comparison with a slide-over feature.
 - Help you to compare two images
 - Lightweight, fast, flexible, customizable.
