@@ -1,0 +1,6 @@
+module Pods_ComparisonSlider_ComparisonSliderTests {
+  umbrella header "Pods-ComparisonSlider-ComparisonSliderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
