@@ -1,9 +1,3 @@
-## Forked and updated
-- Drop-in replacement for `react-native-comparison-slider`
-- Supports react-native `0.67.3` and higher
-- Swapped `react-native-slider` with `@react-native-community/slider`
-- Changed `Class` component to `Functional` component
-
 ## React Native Comparison Slider
 - A simple component to display two image in comparison with a slide-over feature.
 - Help you to compare two images
