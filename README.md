@@ -4,21 +4,30 @@
 - Lightweight, fast, flexible, customizable.
 - Support both iOS and Android devices
 
-## Install
 ```
-npm install --save react-native-comparison-slider
+Original creator: Charles-Olivier Demers @codemers
+```
 
-Require React-Native > 0.45.0
+## Install
+```sh
+npm install react-native-comparison-slider
 ```
+or
+```sh
+yarn add react-native-comparison-slider
+```
+
+Requires React-Native >= 0.67.3
 
 ## Demo
 ![Demo](https://github.com/charlot567/react-native-comparison-slider/blob/master/demo_comparison_slider.gif)
 
 ## Example code
-PS: For a more detailed example, see: react-native-comparison-slider-example -> to run the example, cd to the example folder and do `react-native start` lunch the iOS simulator by running `react-native run-ios`
+PS: For a more detailed example, see: react-native-comparison-slider-example -> to run the example, cd to the example folder and do `npx react-native start` lunch the iOS simulator by running `npx react-native run-ios`
 
 When you want to use the comparison slider with local images, simply add these lines: 
-```
+
+```js
 import ComparisonSlider from "react-native-comparison-slider";
 
 <ComparisonSlider 
@@ -35,7 +44,8 @@ The slider will be half between the image (50).
 The imageWidth and imageHeight are the size you want your comparison slider to be.
 
 When you want to use the comparison slider with remote images, simply add these lines:
-```
+
+```js
 import ComparisonSlider from "react-native-comparison-slider";
 
 <ComparisonSlider 
@@ -96,7 +106,7 @@ SOFTWARE.
 This package use these two libraries:
 
 - https://github.com/jhampton/react-native-cropping.git from 2jhampton
-- https://github.com/jeanregisser/react-native-slider from @jeanregisser
+- https://github.com/callstack/react-native-slider from @callstack
 
 @copyright of the image used in the demo:
 - http://www.basketetsacados.com/top-10-des-plus-belles-plages-du-monde
